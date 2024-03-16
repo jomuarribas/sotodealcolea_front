@@ -1,0 +1,145 @@
+#user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  margin: 0 auto;
+}
+
+#user h2 {
+  margin: 20px 0 15px 0;
+  font-size: 25px;
+  background-color: #d1ebf174;
+  padding: 5px;
+  width: 100vw;
+  text-align: center;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.269);
+}
+
+#user h3 {
+  text-align: center;
+  top: -3px;
+  font-size: medium;
+  padding-bottom: 5px;
+}
+
+.image {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.image > div:nth-child(1) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 150px;
+  background-color: var(--sda-color-tertiary);
+  border-radius: 100%;
+  border: 1px solid var(--sda-color-button-off);
+}
+
+.image > div:nth-child(1) img {
+  object-fit: contain;
+  border-radius: 100%;
+  width: 100%;
+}
+
+.image img {
+  margin: 0 auto;
+}
+
+.image > div:nth-child(1) {
+  margin: 0 20px 0 0;
+}
+
+.image span {
+  font-size: 80px;
+  color: var(--sda-color-button-off);
+}
+
+.changeImg {
+  display: flex;
+  flex-direction: column;
+}
+
+.file-input-container {
+  background-color: #d1ebf174;
+  border-radius: var(--sda-border-radius-big);
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.file-input-container span {
+  color: var(--sda-color-tertiary);
+  font-size: 15px;
+  padding: 5px;
+}
+
+.input-file {
+  display: none;
+}
+
+.file-upload span {
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.file-upload span:hover {
+  color: var(--sda-color-primary);
+  transform: scale(1.1);
+}
+
+.button2 {
+  padding: 0;
+  margin: 0 0 10px 0;
+  font-size: 10px;
+  width: 80px;
+  height: 20px;
+}
+
+.dates {
+  display: flex;
+  justify-content: center;
+  background-color: #d1ebf174;
+  margin: 20px;
+  width: 80%;
+  padding: 20px;
+  border-radius: var(--sda-border-radius-big);
+  gap: 10px;
+}
+
+.dates > div:nth-child(1) {
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+.dates > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+#user > div:nth-child(4) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#user > div:nth-child(4) a {
+  font-size: small;
+  font-weight: bold;
+}
+
+#user > div:nth-child(4) p {
+  padding: 10px 0px;
+  text-align: center;
+  padding: 5px 20px;
+}

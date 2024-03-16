@@ -1,0 +1,20 @@
+#termsOfUse {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  justify-content: flex-start;
+  max-width: 800px;
+  text-justify: distribute;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.34);
+}
+
+#termsOfUse h2 {
+  align-self: center;
+}
+
+#termsOfUse p {
+  margin-top: 20px;
+  align-self: flex-start;
+  text-align: justify;
+}

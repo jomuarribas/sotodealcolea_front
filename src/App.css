@@ -1,0 +1,57 @@
+a {
+  text-decoration: none;
+  color: var(--sda-color-tertiary);
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--sda-color-primary);
+}
+
+input {
+  outline: none;
+}
+
+.button {
+  border: none;
+  width: 90px;
+  height: 30px;
+  margin: 20px auto;
+  border-radius: var(--sda-border-radius-small);
+  background-color: var(--sda-color-button-off);
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: var(--sda-color-button-on);
+  transition: 300ms;
+  scale: 1.05;
+  box-shadow: 1px 1px 1px;
+}
+
+.errors {
+  position: absolute;
+  width: 100%;
+  color: var(--sda-color-primary);
+  font-size: 12px;
+  margin: 0;
+  animation: moverOn 1s forwards;
+  left: 0;
+  right: 0;
+  overflow-x: visible;
+}
+
+.inputError {
+  border: 1px solid rgb(255, 0, 0);
+  background-color: rgb(251, 235, 235);
+  animation: inputErrorAnimation 0.8s forwards infinite alternate;
+}
+
+@keyframes inputErrorAnimation {
+  0% {
+    box-shadow: 0px 0px 0px rgba(255, 0, 0, 0.69);
+  }
+  100% {
+    box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.461);
+  }
+}

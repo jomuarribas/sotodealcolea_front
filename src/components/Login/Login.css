@@ -1,0 +1,80 @@
+#login {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  height: 100vh;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.653) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+}
+
+form div {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+img {
+  width: 130px;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 5px 10px;
+  z-index: 10;
+  border-radius: var(--sda-border-radius-small);
+  border: none;
+  box-shadow: 1px 1px 1px;
+  font-size: 12px;
+}
+
+h2 {
+  font-size: 19px;
+}
+.radio {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.radio > div {
+  margin-top: -10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--sda-color-button-off);
+  z-index: 50;
+  height: 30px;
+  box-shadow: 1px 1px 1px;
+  font-size: 12px;
+}
+
+input[type='radio'] {
+  box-shadow: none;
+}
+
+@keyframes moverOn {
+  0% {
+    bottom: 15px;
+  }
+  100% {
+    bottom: -10px;
+  }
+}

@@ -1,0 +1,187 @@
+#myResidential {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+}
+
+#myResidential h2 {
+  margin-top: 10px;
+  margin: 20px 0 15px 0;
+  font-size: 25px;
+  background-color: #d1ebf174;
+  padding: 5px;
+  width: 100vw;
+  height: 45px;
+  text-align: center;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.269);
+}
+
+#myResidential form select {
+  margin-top: 10px;
+  height: 25px;
+  text-align: center;
+  border-radius: 20px;
+  border: none;
+}
+
+#myResidential form label {
+  text-align: center;
+  font-weight: bold;
+}
+
+.residentialData {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #d1ebf1b5;
+  width: 300px;
+  padding: 20px;
+  border-radius: var(--sda-border-radius-big);
+  margin-top: 15px;
+}
+
+.residentialData h3 {
+  margin-bottom: 10px;
+}
+
+.residentialData span {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.residentialData p {
+  font-size: 15px;
+  text-align: center;
+}
+
+.residentialUsers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 8px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    #d1ebf148,
+    rgba(255, 255, 255, 0) 100%
+  );
+  width: 100%;
+  margin-top: 15px;
+  gap: 15px;
+}
+
+.residentialUsers div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.residentialUsers img {
+  border-radius: 100%;
+  width: 60px;
+  margin: 0;
+}
+
+.residentialUsers p {
+  font-size: 13px;
+}
+
+.residentialUsers span {
+  font-size: 60px;
+}
+
+#myResidential > h4 {
+  margin-top: 20px;
+  background-color: #d1ebf174;
+  padding: 5px;
+}
+
+.expenses,
+.incidents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  width: 100%;
+  height: 40px;
+  background-color: #293a3ba9;
+  padding: 10px;
+  color: var(--sda-color-button-off);
+}
+
+.expenses > h4,
+.incidents > h4 {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.expenses > h4:hover,
+.incidents > h4:hover {
+  color: var(--sda-color-button-on);
+}
+
+.expensesClose,
+.incidentsClose {
+  width: 80%;
+  display: none;
+}
+
+.expensesOpen,
+.incidentsOpen {
+  width: 95%;
+  background-color: #d1ebf174;
+}
+
+.incidentsDates,
+.expensesDates {
+  padding: 8px;
+  text-align: center;
+}
+
+.expensesDates > div,
+.incidentsDates > div {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px dashed var(--sda-color-tertiary);
+  gap: 10px;
+}
+
+.expensesDates > div table {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.expensesDates > div table th,
+td {
+  padding: 5px 15px;
+  border: 1px solid #ddd;
+}
+
+.expensesDates > div table th,
+td {
+  background-color: var(--sda-background-color);
+}
+
+.incidentsDates > div > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.incidentsDates span {
+  margin-right: 10px;
+  font-size: 20px;
+  text-align: end;
+  align-self: center;
+}
+
+.incidentsDates > div > p {
+  font-weight: bold;
+}

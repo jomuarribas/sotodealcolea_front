@@ -1,0 +1,77 @@
+#footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--sda-color-button-off);
+  font-size: small;
+  height: 60px;
+  background-color: #293a3ba9;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.policyAndTermsFooter {
+  display: flex;
+  gap: 10px;
+}
+
+.policyAndTermsFooter a {
+  text-decoration: none;
+  color: var(--sda-color-button-off);
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.policyAndTermsFooter a:hover {
+  color: var(--sda-color-button-on);
+}
+
+.socialIcons {
+  display: flex;
+  gap: 10px;
+}
+
+.facebookSvg,
+.instagramSvg {
+  width: 25px;
+  height: 25px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.facebookSvg {
+  background-image: url('assets/icons/facebook.svg');
+  background-size: cover;
+}
+
+.instagramSvg {
+  background-image: url('/public/assets/icons/instagram.svg');
+  background-size: cover;
+}
+
+.facebookSvg:hover {
+  background-image: url('assets/icons/facebook\ \(1\).svg');
+  background-size: cover;
+}
+
+.instagramSvg:hover {
+  background-image: url('assets/icons/instagram\ \(1\).svg');
+  background-size: cover;
+}
+
+@media (max-width: 750px) {
+  .policyAndTermsFooter {
+    flex-direction: column;
+    align-items: center;
+  }
+  .policyAndTermsFooter span {
+    display: none;
+  }
+  .policyAndTermsFooter a {
+    padding: 10;
+    height: 15px;
+  }
+}

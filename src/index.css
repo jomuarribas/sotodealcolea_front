@@ -1,0 +1,41 @@
+:root {
+  font-family: 'Nunito Sans', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings:
+    'wdth' 100,
+    'YTLC' 500;
+
+  --sda-color-primary: #df040c;
+  --sda-color-secundary: #f8e607;
+  --sda-color-tertiary: #293a3b;
+  --sda-background-color: #d1ebf1;
+  --sda-background-color2: #7b8383;
+  --sda-color-button-off: #fefad2;
+  --sda-color-button-on: #f8e607;
+
+  --sda-border-radius-big: 20px;
+  --sda-border-radius-small: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: rgb(73, 208, 240);
+  background: url('/public/assets/background.webp'),
+    linear-gradient(43deg, rgba(73, 208, 240, 1) 0%, rgba(248, 230, 7, 1) 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: auto 100%;
+  color: var(--sda-color-tertiary);
+}
+
+main {
+  min-height: 100vh;
+  flex-grow: 1;
+}
