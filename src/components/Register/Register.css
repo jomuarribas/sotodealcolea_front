@@ -20,6 +20,7 @@ form {
   display: flex;
   flex-direction: column;
   width: 250px;
+  position: relative;
 }
 
 form div {
@@ -89,4 +90,16 @@ input[type='radio'] {
   100% {
     bottom: -10px;
   }
+}
+
+.reCaptcha {
+  position: absolute;
+  transform: scale(0.7);
+  top: 540px;
+  left: -59px;
+  border-radius: 20px;
+}
+
+.buttonRegister {
+  margin-top: 90px;
 }

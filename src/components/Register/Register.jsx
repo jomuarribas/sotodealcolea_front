@@ -3,8 +3,11 @@ import { useApi } from '../../hooks/useApi'
 import { Link } from 'react-router-dom'
 import './Register.css'
 import Loader from '../Loader/Loader'
+import ReCAPTCHA from 'react-google-recaptcha'
+import { useRef } from 'react'
 
 const Register = () => {
+  const recaptcha = useRef()
   const {
     register,
     handleSubmit,
@@ -16,6 +19,10 @@ const Register = () => {
   const { apiFetch, isLoading } = useApi()
 
   const submit = async (data) => {
+    const captchaValue = recaptcha.current.getValue()
+    if (!captchaValue) {
+      return
+    }
     const { confirmPassword, ...formData } = data
     const route = 'users/register'
     const next = '/welcome'
@@ -163,10 +170,14 @@ const Register = () => {
                 <p className='errors'>{formErrors.confirmPassword.message}</p>
               )}
             </div>
-
-            <button className='button' type='submit'>
+            <button className='button buttonRegister' type='submit'>
               Enviar
             </button>
+            <ReCAPTCHA
+              className='reCaptcha'
+              sitekey='6LfNsZspAAAAAHPfzGET0dB1661qYGK5DxVJIOuA'
+              ref={recaptcha}
+            />
           </form>
           <Link to='/login'>Volver a login</Link>
         </section>
