@@ -47,7 +47,7 @@ const Help = () => {
       {isLoading && <Loader />}
       {!isLoading && user && (
         <section id='help'>
-          <h2>Trámites</h2>
+          <h2>Ayuda</h2>
           <div className='helpForm'>
             <p>Rellena el formulario para solicitar ayuda:</p>
             <form onSubmit={handleHelp}>
