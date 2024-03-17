@@ -27,7 +27,7 @@ const Verification = () => {
   return (
     <section id='welcome'>
       <div className='welcome'>
-        <img src='/public/assets/genial.webp' alt='Genial' />
+        <img src='assets/genial.webp' alt='Genial' />
         <h2>¡Correo verificado!</h2>
         <p>Enhorabuena!. Tu correo ha sido verificado correctamente.</p>
         <p>Ya puedes iniciar sesión y disfrutar de la plataforma.</p>

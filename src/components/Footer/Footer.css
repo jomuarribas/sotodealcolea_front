@@ -48,7 +48,7 @@
 }
 
 .instagramSvg {
-  background-image: url('/public/assets/icons/instagram.svg');
+  background-image: url('assets/icons/instagram.svg');
   background-size: cover;
 }
 

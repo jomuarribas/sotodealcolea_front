@@ -26,7 +26,7 @@
 }
 body {
   background: rgb(73, 208, 240);
-  background: url('/public/assets/background.webp'),
+  background: url('assets/background.webp'),
     linear-gradient(43deg, rgba(73, 208, 240, 1) 0%, rgba(248, 230, 7, 1) 100%);
   background-repeat: no-repeat;
   background-attachment: fixed;

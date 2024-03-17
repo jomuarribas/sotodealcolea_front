@@ -32,7 +32,7 @@ export const useApi = () => {
         body: formDataToSend
       };
 
-      const response = await fetch(`http://localhost:3000/${route}`, requestOptions);
+      const response = await fetch(`https://sotodealcolea-back.vercel.app/${route}`, requestOptions);
       const data = await response.json();
 
       setIsLoading(false)
