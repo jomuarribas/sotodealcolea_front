@@ -5,8 +5,6 @@ const MyUserContext = createContext()
 export const MyUserProvider = ({ children }) => {
   const [user, setUser] = useState({})
   const [residential, setResidential] = useState()
-  const [id, setId] = useState()
-  const [idResidential, setIdResidential] = useState()
 
   return (
     <MyUserContext.Provider
@@ -15,10 +13,6 @@ export const MyUserProvider = ({ children }) => {
         setUser,
         residential,
         setResidential,
-        id,
-        setId,
-        idResidential,
-        setIdResidential,
       }}
     >
       {children}
