@@ -7,6 +7,14 @@ const Home = () => {
   const [showLink2, setShowLink2] = useState(false)
 
   useEffect(() => {
+    const zoomAndScroll = () => {
+      document.body.style.zoom = '100%'
+      window.scrollTo(0, 0)
+    }
+    zoomAndScroll()
+  }, [])
+
+  useEffect(() => {
     setTimeout(() => {
       setShowLink1(true)
     }, 200)
