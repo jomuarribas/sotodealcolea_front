@@ -93,13 +93,8 @@ input[type='radio'] {
 }
 
 .reCaptcha {
-  position: absolute;
   transform: scale(0.7);
-  top: 540px;
-  left: -59px;
-  border-radius: 20px;
-}
-
-.buttonRegister {
-  margin-top: 90px;
+  margin-left: -52px;
+  margin-top: -40px;
+  margin-bottom: -20px;
 }

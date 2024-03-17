@@ -170,14 +170,14 @@ const Register = () => {
                 <p className='errors'>{formErrors.confirmPassword.message}</p>
               )}
             </div>
-            <button className='button buttonRegister' type='submit'>
-              Enviar
-            </button>
             <ReCAPTCHA
               className='reCaptcha'
               sitekey='6LfNsZspAAAAAHPfzGET0dB1661qYGK5DxVJIOuA'
               ref={recaptcha}
             />
+            <button className='button' type='submit'>
+              Enviar
+            </button>
           </form>
           <Link to='/login'>Volver a login</Link>
         </section>
