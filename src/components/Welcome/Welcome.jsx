@@ -5,7 +5,7 @@ const Welcome = () => {
   return (
     <section id='welcome'>
       <div className='welcome'>
-        <img src='assets/genial.webp' alt='Genial' />
+        <img src='../assets/genial.webp' alt='Genial' />
         <h2>¡Tu usuario ha sido registrado!</h2>
         <p>
           Te acabamos de enviar un email para que verifiques tu cuenta y puedas
