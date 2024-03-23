@@ -3,6 +3,7 @@ nav {
   background-color: #293a3beb;
   height: 90%;
   position: absolute;
+  top: 60px;
   z-index: 20;
   border-radius: 0 0 300px 0;
 }
