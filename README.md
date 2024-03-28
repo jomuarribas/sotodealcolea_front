@@ -22,7 +22,7 @@ Backend desplegado en Render
 
 Frontend desplegado en Netlify
 
-- [https://sotodealcolea.netlify.app/](https://sotodealcolea.netlify.app/)
+- [https://sotodealcolea.vercel.app/](https://sotodealcolea.vercel.app/)
 
 ## Inicialización local
 
