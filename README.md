@@ -18,7 +18,7 @@ Aplicación web para gestionar un club social con 240 socios.
 
 Backend desplegado en Render
 
-- [https://sotodealcolea-back.onrender.com](https://sotodealcolea-back.onrender.com)
+- [https://sotodealcolea-back.vercel.app](https://sotodealcolea-back.vercel.app)
 
 Frontend desplegado en Netlify
 
